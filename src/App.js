@@ -1,16 +1,19 @@
 import React from 'react'
-import axios from 'axios'
+
 
 function App() {
-  React.useEffect(() => {
-    const getData = async () => {
-      const res = await axios.get('/api/endpoint') // * <-- replace with your endpoint
-      console.log(res.data)
-    }
-    getData()
-  })
 
-  return <h1>Hello World</h1>
+
+  return (
+    <div>
+      <h1>soemthing</h1>
+      <h2>something</h2>
+      <h3>something</h3>
+      <h4 className="diagonal-white-right">something</h4>
+      <polygon fill="#3d3547" points="1440,0 0,230 0,270 1440,40"></polygon> 
+    </div>
+    
+  )
 }
 
 export default App

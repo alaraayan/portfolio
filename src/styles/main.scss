@@ -1,0 +1,30 @@
+body {
+  background-color: #edeaea;
+}
+
+h1 {
+  background-color: #3d3547;
+}
+
+h2{
+  background-color: #a179af;
+}
+
+h3{
+  background-color: #836a8c;
+
+}
+
+h4{
+  background-color: #a39a9f;
+  margin-top: 100px;
+  margin-left: 0;
+}
+
+.diagonal-white-right {
+  width: 101%;
+  border-bottom: 74px solid white;
+-webkit-transform: translateY(-50px) translateX(0px) rotate(2deg);
+  position: absolute;
+  overflow-x: hidden;
+}
