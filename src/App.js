@@ -1,18 +1,26 @@
 import React from 'react'
-
+import Nav from './components/Nav'
+import Hero from './components/Hero'
+import About from './components/About'
+import Languages from './components/Languages'
+import Projects from './components/Projects'
+import WorkExperience from './components/WorkExperience'
+import Contact from './components/Contact'
 
 function App() {
 
 
   return (
-    <div>
-      <h1>soemthing</h1>
-      <h2>something</h2>
-      <h3>something</h3>
-      <h4 className="diagonal-white-right">something</h4>
-      <polygon fill="#3d3547" points="1440,0 0,230 0,270 1440,40"></polygon> 
-    </div>
+    <>
     
+      <Hero />
+      <Nav />
+      <About />
+      <Languages />
+      <Projects />
+      <WorkExperience />
+      <Contact />
+    </>
   )
 }
 
