@@ -12,8 +12,8 @@ export default function Hero() {
       <div className="component-container light">
         <div className="column-flex-container">
           <div className="title-container">
-            <h1 className="caps">alara ayan</h1>
-            <h4 className="caps">junior web developer</h4>
+            <h1 className="caps title-font">alara ayan</h1>
+            <h4 className="caps title-font medium-title">junior web developer</h4>
           </div>
           <img src={alara} alt="alara icon" id="alara"></img>
         </div>

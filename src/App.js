@@ -13,16 +13,20 @@ function App() {
 
 
   return (
-    <Router>
+    <>
       <Nav />
       <Hero />
       
-      <About title="about" subtitle="about"/>
-      <Languages title="languages" subtitle="languages"/>
-      <Projects title="projects" subtitle="projects"/>
-      <WorkExperience title="experience" subtitle="experience"/>
-      <Contact title="contact" subtitle="contact"/>
-    </Router>
+      <Router>
+      
+      
+        <About title="about" subtitle="about"/>
+        <Languages title="languages" subtitle="languages"/>
+        <Projects title="projects" subtitle="projects"/>
+        <WorkExperience title="experience" subtitle="experience"/>
+        <Contact title="contact" subtitle="contact"/>
+      </Router>
+    </>
   )
 }
 

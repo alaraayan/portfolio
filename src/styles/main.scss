@@ -3,6 +3,7 @@ $black: #1D2226;
 $title-font: PPAgrandir;
 $general-text-font: 'DM Sans', sans-serif;
 
+
 @font-face {
   font-family: 'PPAgrandir';
   src: url('../assets/Agandir\ Font/PPAgrandir-NarrowRegular.otf') format('truetype');
@@ -31,7 +32,7 @@ $general-text-font: 'DM Sans', sans-serif;
   text-transform: uppercase;
 }
 
-h1, h4 {
+.title-font {
   font-family: $title-font, medium;
 }
 
@@ -39,7 +40,7 @@ h1 {
   font-size: 600%;
 }
 
-h4 {
+.medium-title {
   font-size: 200%;
   text-align: center;
 }
@@ -72,6 +73,7 @@ h4 {
     .grid-flex-container, .column-flex-container, .hero-text {
       max-width: 80%;
     }
+
   }
 }
 
@@ -163,6 +165,9 @@ h4 {
   position: absolute;
   overflow-x: hidden;
   right: -1px;
+  @media only screen and (max-width: 1095px){
+      display: none;
+    }
 }
 
 .section-break-horizontal {
@@ -178,5 +183,43 @@ h4 {
 .contact-links img {
   min-width: 33%;
 }
+
+//****NAVBAR****//
+
+.navbar-link {
+  cursor: pointer;
+}
+.navbar {
+  width: 100vw;
+  position: fixed;
+}
+.navbar-flex-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  background-color: $beige;
+  margin: 0;
+  // position: fixed;
+  
+  .navbar-links-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 2;
+    
+  }
+}
+
+.navbar-link {
+  margin: 0 2%;
+  color: $black;
+  
+}
+
+.navbar-dark {
+  color: $beige;
+  background-color: $black;
+}
+
 
 
