@@ -14,8 +14,9 @@ function App() {
 
   return (
     <Router>
-      <Hero />
       <Nav />
+      <Hero />
+      
       <About title="about" subtitle="about"/>
       <Languages title="languages" subtitle="languages"/>
       <Projects title="projects" subtitle="projects"/>
