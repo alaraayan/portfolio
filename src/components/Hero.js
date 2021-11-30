@@ -1,12 +1,12 @@
+import { Link } from 'react-scroll'
+
 import alara from '../assets/images/alara.png'
 import locationPin from '../assets/images/pin.png'
 import gitHub from '../assets/images/github.png'
 import linkedIn from '../assets/images/linkedin.png'
 
 export default function Hero() {
-  const handleClick = (e) => {
-    console.log(e.target.value)
-  }
+
   return (
     <div className="component-container light">
       <div className="column-flex-container">
@@ -20,10 +20,39 @@ export default function Hero() {
         <p className="hero-text">Recent gradute of the General Assembly Software Engineering Immersive. Passionate about building full stack apps and everything React.js. Looking to build on my skills within an engaging work environment where I can root and grow as a developer.</p>
         {/* <p className="hero-text">I make ceramics, bake bread and am a dog person.</p> */}
         <div className="grid-flex-container">
-          <button value="about-me" type="button" className="button hero-button" onClick={handleClick}>About Me</button>
-          <button value="languages" type="button" className="button hero-button" onClick={handleClick}>Languages</button>
-          <button value="projects" type="button" className="button hero-button" onClick={handleClick}>Projects</button>
-          <button value="experience" type="button" className="button hero-button" onClick={handleClick}>Previous Experience</button>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            // offset={-70}
+            duration={500}
+            className="button hero-button"
+          >About Me</Link>
+          <Link
+            activeClass="active"
+            to="languages"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="button hero-button"
+          >Languages</Link>
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="button hero-button"
+          >Projects</Link>
+          <Link
+            activeClass="active"
+            to="experience"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="button hero-button"
+          >Previous Experience</Link>
           {/* <button type="button" className="button hero-button">Contact</button> */}
         </div>
         <hr className="break"></hr>

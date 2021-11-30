@@ -1,3 +1,3 @@
 export default function WorkExperience() {
-  return <h2>Hello World</h2>
+  return <div className="component-container dark" id="experience"> ABOUT ME </div>
 }

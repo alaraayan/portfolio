@@ -90,7 +90,9 @@ h4 {
   border: none;
   border-radius: 2px;
   width: 25%;
-  flex-basis: calc(50% - 40px)
+  flex-basis: calc(50% - 40px);
+  cursor:pointer;
+  text-align: center;
 }
 
 img {
@@ -98,8 +100,5 @@ img {
   margin-top: 5%;
 }
 
-button {
-  cursor:pointer;
-}
 
 

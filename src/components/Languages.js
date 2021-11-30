@@ -1,3 +1,3 @@
 export default function Languages() {
-  return <h2>Hello World</h2>
+  return <div className="component-container light" id="languages"> ABOUT ME </div>
 }

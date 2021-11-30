@@ -1,3 +1,3 @@
 export default function About() {
-  return <div className="component-container dark"> ABOUT ME </div>
+  return <div className="component-container dark" id="about"> ABOUT ME </div>
 }

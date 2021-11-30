@@ -1,3 +1,3 @@
 export default function Projects() {
-  return <h2>Hello World</h2>
+  return <div className="component-container dark" id="projects"> ABOUT ME </div>
 }
