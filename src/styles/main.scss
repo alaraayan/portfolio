@@ -36,11 +36,11 @@ h1, h4 {
 }
 
 h1 {
-  font-size: 120px;
+  font-size: 600%;
 }
 
 h4 {
-  font-size: 40px;
+  font-size: 200%;
   text-align: center;
 }
 
@@ -62,8 +62,14 @@ h4 {
 .grid-flex-container {
   display: flex;
   justify-content: space-evenly;
-  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  margin: 5% 0%;
+}
 
+.title-container {
+  max-width: 100%;
 }
 
 
@@ -76,9 +82,24 @@ h4 {
 }
 
 .hero-button {
-  font-size: 16px;
-  margin: 0px 10%;
-  padding: 2% 5%;
+  font-size: 100%;
+  flex-grow: 1;
+  padding: 7px 25px;
+  background-color: $black;
+  color: $beige;
+  border: none;
+  border-radius: 2px;
+  width: 25%;
+  flex-basis: calc(50% - 40px)
+}
+
+img {
+  max-width: 50%;
+  margin-top: 5%;
+}
+
+button {
+  cursor:pointer;
 }
 
 

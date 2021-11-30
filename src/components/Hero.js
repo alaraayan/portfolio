@@ -4,6 +4,9 @@ import gitHub from '../assets/images/github.png'
 import linkedIn from '../assets/images/linkedin.png'
 
 export default function Hero() {
+  const handleClick = (e) => {
+    console.log(e.target.value)
+  }
   return (
     <div className="component-container light">
       <div className="column-flex-container">
@@ -15,12 +18,13 @@ export default function Hero() {
       </div>
       <div className="column-flex-container">
         <p className="hero-text">Recent gradute of the General Assembly Software Engineering Immersive. Passionate about building full stack apps and everything React.js. Looking to build on my skills within an engaging work environment where I can root and grow as a developer.</p>
-        <p className="hero-text">Potter | Dog Lover | Bread Baker</p>
+        {/* <p className="hero-text">I make ceramics, bake bread and am a dog person.</p> */}
         <div className="grid-flex-container">
-          <button className="button hero-button">About Me</button>
-          <button className="button hero-button">Languages</button>
-          <button className="button hero-button">Projects</button>
-          <button className="button hero-button">Work Experience</button>
+          <button value="about-me" type="button" className="button hero-button" onClick={handleClick}>About Me</button>
+          <button value="languages" type="button" className="button hero-button" onClick={handleClick}>Languages</button>
+          <button value="projects" type="button" className="button hero-button" onClick={handleClick}>Projects</button>
+          <button value="experience" type="button" className="button hero-button" onClick={handleClick}>Previous Experience</button>
+          {/* <button type="button" className="button hero-button">Contact</button> */}
         </div>
         <hr className="break"></hr>
         <div className="icons row-flex-container">
