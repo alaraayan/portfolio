@@ -156,7 +156,7 @@ h1 {
 }
 
 .section-break {
-  width: 101%;
+  width: 99vw;
   border: 80px solid $black;
   background-color: $black;
   -webkit-transform: translateY(-50px) translateX(0px) rotate(1.2deg);
@@ -164,6 +164,21 @@ h1 {
   position: absolute;
   overflow-x: hidden;
   right: -1px;
+  @media only screen and (max-width: 1095px){
+      display: none;
+    }
+}
+
+.section-break-left {
+  width: 99vw;
+  border: 80px solid $beige;
+  background-color: $beige;
+  -webkit-transform: translateY(-50px) translateX(0px) rotate(-1.2deg);
+  transform: translateY(-50px) translateX(0px) rotate(-3.0deg);
+  position: absolute;
+  overflow-x: hidden;
+  right: -18.5px;
+  
   @media only screen and (max-width: 1095px){
       display: none;
     }
@@ -178,6 +193,8 @@ h1 {
   border: $black 30px solid;
   left: -2px;
 }
+
+
 
 .contact-links img {
   min-width: 33%;
@@ -240,5 +257,5 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 3vh;
+  height: 33vh;
 }
