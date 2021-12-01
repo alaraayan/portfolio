@@ -28,9 +28,6 @@ export default function Nav() {
       <div className="navbar-flex-container">
         <div className="title-font medium-title cursor" onClick={scrollToTop}>ALARA AYAN</div>
         <div className="navbar-links-container ">
-          {/* <div className="menu-items-end" onClick={handleSideBar}>
-          <Hamburger toggled={sidebarShow} toggle={setSidebarShow} />
-        </div> */}
           <Link
             activeClass="active"
             to="about"
@@ -77,7 +74,7 @@ export default function Nav() {
           >Contact</Link>
         </div>
       </div>
-
+      <span className="material-icons navbar-arrow cursor" onClick={scrollToTop}>arrow_upward</span>
     </div>
   )
 }

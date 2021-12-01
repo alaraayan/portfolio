@@ -190,6 +190,16 @@ h1 {
   position: fixed;
   z-index: 7;
 }
+
+.navbar-arrow {
+  font-size: 200%;
+  background-color: $black;
+  color: $beige;
+  border-radius: 50%;
+  margin: 82vh 10px 10px 95vw;
+  position: fixed;
+  z-index: 7;
+}
 .navbar-flex-container {
   display: flex;
   justify-content: space-between;
