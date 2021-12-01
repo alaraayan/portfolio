@@ -1,3 +1,3 @@
 export default function Contact() {
-  return <div className="component-container dark footer" id="contact"> ABOUT ME </div>
+  return <div className="component-container dark" id="contact"> CONTACT </div>
 }
