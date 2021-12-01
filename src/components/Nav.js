@@ -3,13 +3,30 @@ import { Link } from 'react-scroll'
 // import { Cross as Hamburger } from 'hamburger-react'
 
 export default function Nav() {
-  
+  const [hasScrolled, setHasScrolled] = React.useState(false)
 
+  React.useEffect(()=>{
+    document.addEventListener('scroll', e => {
+      const scrolled = document.scrollingElement.scrollTop
+      if (scrolled >= 700){
+        setHasScrolled(true)
+      } else {
+        setHasScrolled(false)
+      }
+    })
+  },[])
+  
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }
   return (
-    <div className="navbar">
+    <div className="navbar" style={{ display: !hasScrolled ? 'none' : '' }}>
 
       <div className="navbar-flex-container">
-        <div className="title-font medium-title">ALARA AYAN</div>
+        <div className="title-font medium-title cursor" onClick={scrollToTop}>ALARA AYAN</div>
         <div className="navbar-links-container ">
           {/* <div className="menu-items-end" onClick={handleSideBar}>
           <Hamburger toggled={sidebarShow} toggle={setSidebarShow} />
@@ -20,7 +37,7 @@ export default function Nav() {
             spy={true}
             smooth={true}
             duration={500}
-            className="navbar-link"
+            className="navbar-link cursor"
           >About</Link>
           {/* <p>|</p> */}
           <Link
@@ -29,7 +46,7 @@ export default function Nav() {
             spy={true}
             smooth={true}
             duration={500}
-            className="navbar-link"
+            className="navbar-link cursor"
           >Languages</Link>
           {/* <p>|</p> */}
           <Link
@@ -38,7 +55,7 @@ export default function Nav() {
             spy={true}
             smooth={true}
             duration={500}
-            className="navbar-link"
+            className="navbar-link cursor"
           >Projects</Link>
           {/* <p>|</p> */}
           <Link
@@ -47,7 +64,7 @@ export default function Nav() {
             spy={true}
             smooth={true}
             duration={500}
-            className="navbar-link"
+            className="navbar-link cursor"
           >Previous Experience</Link>
           {/* <p>|</p> */}
           <Link
@@ -56,7 +73,7 @@ export default function Nav() {
             spy={true}
             smooth={true}
             duration={500}
-            className="navbar-link"
+            className="navbar-link cursor"
           >Contact</Link>
         </div>
       </div>

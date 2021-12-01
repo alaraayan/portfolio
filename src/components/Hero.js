@@ -27,7 +27,7 @@ export default function Hero() {
               smooth={true}
               // offset={-70}
               duration={500}
-              className="button hero-button"
+              className="button hero-button cursor"
             >About Me</Link>
             <Link
               activeClass="active"
@@ -35,7 +35,7 @@ export default function Hero() {
               spy={true}
               smooth={true}
               duration={500}
-              className="button hero-button"
+              className="button hero-button cursor"
             >Languages</Link>
             <Link
               activeClass="active"
@@ -43,7 +43,7 @@ export default function Hero() {
               spy={true}
               smooth={true}
               duration={500}
-              className="button hero-button"
+              className="button hero-button cursor"
             >Projects</Link>
             <Link
               activeClass="active"
@@ -51,15 +51,15 @@ export default function Hero() {
               spy={true}
               smooth={true}
               duration={500}
-              className="button hero-button"
+              className="button hero-button cursor"
             >Previous Experience</Link>
             {/* <button type="button" className="button hero-button">Contact</button> */}
           </div>
           <hr className="break"/>
           <div className="icons row-flex-container">
-            <a href="https://github.com/alaraayan" target="_blank" rel="noreferrer" className="contact-links"><img src={gitHub} alt="github icon" className="icon"></img></a>
+            <a href="https://github.com/alaraayan" target="_blank" rel="noreferrer" className="contact-links cursor"><img src={gitHub} alt="github icon" className="icon"></img></a>
 
-            <a href="https://www.linkedin.com/in/alaraayan/" target="_blank" rel="noreferrer" className="contact-links" ><img src={linkedIn} alt="linkedin icon" className="icon"></img></a>
+            <a href="https://www.linkedin.com/in/alaraayan/" target="_blank" rel="noreferrer" className="contact-links" ><img src={linkedIn} alt="linkedin icon" className="icon cursor"></img></a>
             <div className="location-link-container "><img src={locationPin} alt="location pin icon" className="icon"></img>LONDON, N8</div>
           </div>
         </div>
