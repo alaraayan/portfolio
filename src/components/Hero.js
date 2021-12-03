@@ -31,12 +31,12 @@ export default function Hero() {
             >About Me</Link>
             <Link
               activeClass="active"
-              to="languages"
+              to="skills"
               spy={true}
               smooth={true}
               duration={500}
               className="button hero-button cursor"
-            >Languages</Link>
+            >Skills</Link>
             <Link
               activeClass="active"
               to="projects"

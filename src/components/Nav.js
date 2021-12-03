@@ -39,12 +39,12 @@ export default function Nav() {
           {/* <p>|</p> */}
           <Link
             activeClass="active"
-            to="languages"
+            to="skills"
             spy={true}
             smooth={true}
             duration={500}
             className="navbar-link cursor"
-          >Languages</Link>
+          >Skills</Link>
           {/* <p>|</p> */}
           <Link
             activeClass="active"

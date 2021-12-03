@@ -1,8 +1,0 @@
-export default function Languages() {
-  return (
-    <>
-      <div className="component-container light" id="languages"> LANGUAGES </div>
-      <hr className="section-break"/>
-    </>
-  )
-}
