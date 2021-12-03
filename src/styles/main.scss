@@ -35,12 +35,6 @@ $general-text-font: 'DM Sans', sans-serif;
   width: 30px;
 }
 
-.icon-white {
-  width: 40px;
-  padding: 2px;
-  background: $beige;
-  border-radius: 2px;
-}
 
 .caps {
   text-transform: uppercase;
@@ -241,10 +235,20 @@ h1 {
   left: -2px;
 }
 
-
-
-.contact-links img {
+.hero-contact-links img {
   min-width: 33%;
+}
+
+.contact-links {
+  text-decoration: none;
+  color: $beige;
+  width: 70%;
+  i {
+    width: 180%;
+  }
+  p {
+    display: inline;
+  }
 }
 
 //****NAVBAR****//
@@ -368,6 +372,18 @@ h1 {
   height: 70vh;
 }
 
-.contact-info-container {
-  margin-top: 10%;
+.contact-icons {
+  margin-top: 5%;
+  margin-right: 5%;
+  width: 100%;
+  flex:1;
+  font-size: 200%;
+  .contact-links {
+    margin: 2.5%;
+    .contact-icon{
+      width: 30%;
+      padding: 5%;
+    }
+  }
+  
 }
