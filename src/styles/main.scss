@@ -16,12 +16,19 @@ $general-text-font: 'DM Sans', sans-serif;
   margin: 0;
 }
 
+
+.no-show {
+  display:none;
+}
+
 .light {
   background-color: $beige;
+  color: $black;
 }
 
 .dark {
   background-color: $black;
+  color: $beige;
 }
 
 .icon {
@@ -36,6 +43,16 @@ $general-text-font: 'DM Sans', sans-serif;
   font-family: $title-font, medium;
 }
 
+.section-title {
+  flex: 2;
+}
+
+.info-text {
+  flex:3;
+  font-size: 120%;
+  // margin-top: 5%;
+}
+
 h1 {
   font-size: 600%;
 }
@@ -44,6 +61,7 @@ h1 {
   font-size: 200%;
   text-align: center;
 }
+
 
 .component-container {
   display: flex;
@@ -84,6 +102,10 @@ h1 {
   align-items: center;
 }
 
+.separated-columns {
+  justify-content: stretch;
+}
+
 .grid-flex-container {
   display: flex;
   justify-content: space-evenly;
@@ -101,6 +123,13 @@ h1 {
   gap: 5%;
   width: 90%;
   margin: 5% 0%;
+}
+
+.flex-row-centered {
+  margin: 0;
+  margin-top: 8%;
+  align-items: flex-start;
+  z-index: 1;
 }
 
 .title-container {
@@ -156,7 +185,7 @@ h1 {
 }
 
 .section-break {
-  width: 99vw;
+  width: 101%;
   border: 80px solid $black;
   background-color: $black;
   -webkit-transform: translateY(-50px) translateX(0px) rotate(1.2deg);
@@ -170,14 +199,14 @@ h1 {
 }
 
 .section-break-left {
-  width: 99vw;
+  width: 101%;
   border: 80px solid $beige;
   background-color: $beige;
   -webkit-transform: translateY(-50px) translateX(0px) rotate(-1.2deg);
   transform: translateY(-50px) translateX(0px) rotate(-3.0deg);
   position: absolute;
   overflow-x: hidden;
-  right: -18.5px;
+  right: -17.5px;
   
   @media only screen and (max-width: 1095px){
       display: none;
@@ -257,5 +286,45 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 33vh;
+  height: 3vh;
+}
+
+//****ABOUT****//
+
+// .blob-container{
+
+//   margin: 0;
+
+
+// }
+
+.blob {
+  width: 70%;
+  cursor: pointer;
+}
+
+.blob-inner {
+  position: relative;
+  text-align: center;
+}
+
+.centered-blob-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $black;
+  font-family: $title-font;
+  font-size: 120%;
+
+  
+}
+
+.left-blob {
+  left: 49%;
+  right: 10%;
+}
+
+.right-blob {
+  left: 47%;
 }

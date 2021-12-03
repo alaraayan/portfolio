@@ -18,7 +18,7 @@ export default function Hero() {
           <img src={alara} alt="alara icon" id="alara"></img>
         </div>
         <div className="column-flex-container">
-          <p className="hero-text">Recent gradute of the General Assembly Software Engineering Immersive. Passionate about building full stack apps and everything React.js. Looking to build on my skills within an engaging work environment where I can root and grow as a developer.</p>
+          <p className="hero-text">Recent gradute of the General Assembly Software Engineering Immersive with 4 years marketing experience. Passionate about building full stack apps and everything React.js. Looking to build on my skills within an engaging work environment where I can root and grow as a developer.</p>
           <div className="grid-flex-container">
             <Link
               activeClass="active"
