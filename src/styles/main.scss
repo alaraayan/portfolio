@@ -35,6 +35,13 @@ $general-text-font: 'DM Sans', sans-serif;
   width: 30px;
 }
 
+.icon-white {
+  width: 40px;
+  padding: 2px;
+  background: $beige;
+  border-radius: 2px;
+}
+
 .caps {
   text-transform: uppercase;
 }
@@ -353,4 +360,14 @@ h1 {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+}
+
+//****CONTACT****//
+
+#contact {
+  height: 70vh;
+}
+
+.contact-info-container {
+  margin-top: 10%;
 }
