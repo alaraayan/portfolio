@@ -1,43 +1,55 @@
+// import flower1 from '../assets/images/flower1.gif'
+
 export default function Skills() {
   return (
     <>
       <div className="component-container light" id="skills"> 
-        <div className="column-flex-container separate">
-          <h1 className="title-font caps text-aligned-right">skills &amp; tools</h1>
+        <div className="separate">
+          <h1 className="title-font text-aligned-right">Skills &amp; Tools</h1>
           <div className="skills-container">
             <div className="skills languages">
-              Languages
+              
+              <h2 className="skills-header">Skills</h2>
+              <ul className="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Sass</li>
+                <li>Javascript</li>
+                <li>React.js</li>
+                <li>Node.js + Express.js</li>
+                <li>MongoDB + Mongoose</li>
+                <li>Python + Django</li>
+                <li>PostgreSQL</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                
+              </ul>
             </div>
             <div className="skills tools">
-              Tools
+              <h2 className="skills-header">Tools</h2>
+              <ul className="skills-list">
+                <li>VS Code</li>
+                <li>Insomnia</li>
+                <li>Slack</li>
+                <li>Trello</li>
+                <li>Asana</li>
+                <li>Figma</li>
+                <li>Photoshop</li>
+                
+              </ul>
+              
             </div>
             <div className="skills studying">
-              Strudyi
+              <h2 className="skills-header">Studying</h2>
+              <ul className="skills-list">
+                <li>TypeScript</li>
+                <li>Java</li>
+              </ul>
             </div>
+            {/* <img src={flower1} className="flower"></img> */}
           </div>
-          {/* <div className="skills-icons">
-            <div className="icon-item"><i className="devicon-javascript-plain"></i></div>
-            <div className="icon-item"><i className="devicon-react-original-wordmark"></i></div>
-            <div className="icon-item"><i className="devicon-html5-plain-wordmark"></i></div>
-            <div className="icon-item"><i className="devicon-css3-plain-wordmark"></i></div>
-            <div className="icon-item"><i className="devicon-sass-original"></i></div>
-            <div className="icon-item"><i className="devicon-mongodb-plain-wordmark"></i></div>
-            <div className="icon-item"><i className="devicon-express-original"></i></div>
-            <div className="icon-item"><i className="devicon-nodejs-plain"></i></div>
-            <div className="icon-item"><i className="devicon-python-plain"></i></div>
-            <div className="icon-item"><i className="devicon-django-plain"></i></div>
-            <div className="icon-item"><i className="devicon-yarn-plain"></i></div>
-            <div className="icon-item"><i className="devicon-postgresql-plain"></i></div>
-            <div className="icon-item"><i className="devicon-vuejs-plain"></i></div>
-            <div className="icon-item"><i className="devicon-github-original"></i></div>
-            <div className="icon-item"><i className="devicon-git-plain"></i></div>
-            <div className="icon-item"><i className="devicon-visualstudio-plain"></i></div>
-            <div className="icon-item"><i className="devicon-heroku-original"></i></div>
-            <div className="icon-item"><i className="devicon-chrome-plain"></i></div>
-            <div className="icon-item"><i className="devicon-slack-plain"></i></div>
-            <div className="icon-item"><i className="devicon-trello-plain"></i></div>
-          </div> */}
-
+          
+          
 
         </div>
       </div>

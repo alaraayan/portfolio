@@ -347,24 +347,59 @@ h1 {
 
 //****SKILLS****//
 
-.skills-icons {
-  display: flex;
+.text-aligned-right {
+  width: 50%;
+  margin-left: 20vw;
+  // margin-bottom: 30%;
+  margin-top: 10%;
+  font-size: 550%;
 }
-
-// .text-aligned-right {
-//   margin: 0 0 0 100%;
-//   margin-left: 100%;
-// }
 
 .separate {
-  justify-content: space-evenly;
+  width: 70vw;
+  justify-content: center;
+  .skills-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 7%;
+    z-index: 10;
+    .skills{
+      width: 20%;
+      .skills-header {
+        font-size: 200%;
+        text-align: center;
+        color: $beige;
+        background-color: $black;
+        border: 2px $black solid;
+      border-radius: 4px;
+      }
+      .skills-list{
+        border: 2px $black solid;
+        border-radius: 4px;
+        margin-top: 0%;
+        padding-left: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li{
+          list-style-type: '-';
+          text-align: justify;
+          padding: 2.5%;
+          font-size: 120%;
+        }
+      } 
+    }
+    .flower {
+      height: 80px;
+      z-index: 4;
+      margin: 0;
+    }
+  }
+
 }
 
-.skills-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-}
+
 
 //****CONTACT****//
 
