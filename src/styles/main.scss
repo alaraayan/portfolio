@@ -125,6 +125,17 @@ h1 {
   margin: 5% 0%;
 }
 
+.column-reverse-flex-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 5%;
+  width: 90%;
+  margin: 5% 0%;
+}
+
 .flex-row-centered {
   margin: 0;
   margin-top: 8%;
@@ -291,12 +302,6 @@ h1 {
 
 //****ABOUT****//
 
-// .blob-container{
-
-//   margin: 0;
-
-
-// }
 
 .blob {
   width: 70%;
@@ -327,4 +332,25 @@ h1 {
 
 .right-blob {
   left: 47%;
+}
+
+//****SKILLS****//
+
+.skills-icons {
+  display: flex;
+}
+
+// .text-aligned-right {
+//   margin: 0 0 0 100%;
+//   margin-left: 100%;
+// }
+
+.separate {
+  justify-content: space-evenly;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
