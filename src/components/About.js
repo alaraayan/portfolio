@@ -27,7 +27,7 @@ export default function About() {
       <div className="component-container dark" id="about"> 
         <div className="column-flex-container separated-columns">
           <div className="row-flex-container flex-row-centered">
-            <h1 className="title-font section-title">Hi!<br/> I'm Alara.</h1>
+            <h1 className="title-font section-title">Hi!<br/> I&apos;m Alara.</h1>
             <div className="info-text">
               <p>I recently graduated from the Software Engineering Immersive at General Assembly and continue to work there as a TA. Previously, I have built a career of 4 years in marketing, working in an international team.</p> 
               <br/>
@@ -39,14 +39,14 @@ export default function About() {
               <div className="blob-inner">
                 <img className={`blob blob-front ${isLeftFlipped ? 'no-show' : ''}`} src={surf}></img>
                 <img className={`blob blob-back ${!isLeftFlipped ? 'no-show' : ''}`} src={blobLeft}></img>
-                <p className={`centered-blob-text left-blob ${!isLeftFlipped ? 'no-show' : ''}`}> I love being in the open water and although I've tried most water sports, nothing beats windsurfing.</p>
+                <p className={`centered-blob-text left-blob ${!isLeftFlipped ? 'no-show' : ''}`}> I love being in the open water and although I&apos;ve tried most water sports, nothing beats windsurfing.</p>
               </div>
             </div>
             <div className="blob-container" value="center" onClick={handleCenterClick}>
               <div className="blob-inner">
                 <img className={`blob blob-front ${isCenterFlipped ? 'no-show' : ''}`} src={pottery}></img>
                 <img className={`blob blob-back ${!isCenterFlipped ? 'no-show' : ''}`} src={blobCenter}></img>
-                <p className={`centered-blob-text ${!isCenterFlipped ? 'no-show' : ''}`}> Trained in both the  wheel and hand-building, I really enjoy drinking my my morning coffee out of mugs I've made myself.</p>
+                <p className={`centered-blob-text ${!isCenterFlipped ? 'no-show' : ''}`}> Trained in both the  wheel and hand-building, I really enjoy drinking my my morning coffee out of mugs I&apos;ve made myself.</p>
               </div>
             </div>
             <div className="blob-container" value="right" onClick={handleRightClick}>

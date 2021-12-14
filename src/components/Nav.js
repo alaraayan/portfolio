@@ -7,6 +7,7 @@ export default function Nav() {
 
   React.useEffect(()=>{
     document.addEventListener('scroll', e => {
+      console.log(e)
       const scrolled = document.scrollingElement.scrollTop
       if (scrolled >= 700){
         setHasScrolled(true)
@@ -15,7 +16,7 @@ export default function Nav() {
       }
     })
   },[])
-  
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

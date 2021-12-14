@@ -9,7 +9,7 @@ export default function Hero() {
 
   return (
     <>
-      <div className="component-container light">
+      <div className="component-container light" id="hero">
         <div className="column-flex-container">
           <div className="title-container">
             <h1 className="caps title-font">alara ayan</h1>
