@@ -530,9 +530,14 @@ h1 {
   }
 }
 
-//* PROJECTS
+//* EXPERIENCE
 
 #experience {
+  h1 {
+    margin:0;
+    padding: 0;
+    flex:0;
+  }
   .timeline {
     position: relative;
     width: 100%;
@@ -546,28 +551,29 @@ h1 {
     position: absolute;
     width: 2px;
     background: $black;
+    background: $black;
     top: 0;
     bottom: 0;
     left: 50%;
     margin-left: -1px;
   }
   
-  .container {
-    padding: 15px 30px;
+  .experience-container {
+    padding: 0 30px;
     position: relative;
     background: inherit;
     width: 50%;
   }
   
-  .container.left {
+  .experience-container.left {
     left: 0;
   }
   
-  .container.right {
+  .experience-container.right {
     left: 50%;
   }
   
-  .container::after {
+  .experience-container::after {
     content: '';
     position: absolute;
     width: 16px;
@@ -580,11 +586,11 @@ h1 {
     z-index: 1;
   }
   
-  .container.right::after {
+  .experience-container.right::after {
     left: -8px;
   }
   
-  .container::before {
+  .experience-container::before {
     content: '';
     position: absolute;
     width: 50px;
@@ -595,37 +601,38 @@ h1 {
     z-index: 1;
   }
   
-  .container.right::before {
+  .experience-container.right::before {
     left: 8px;
   }
   
-  .container .content {
+  .experience-container .content {
     padding: 30px 90px 30px 30px;
     background: $black;
     position: relative;
     border-radius: 3px;
   }
   
-  .container.right .content {
+  .experience-container.right .content {
     padding: 30px 30px 30px 90px;
 
   }
   a {
     text-decoration: none;
   }
-  .container .content h2, .container .content h6 {
+  .experience-container .content h2, .experience-container .content h6 {
+    font-family: $title-font;
     margin: 0 0 10px 0;
     font-size: 18px;
     font-weight: normal;
     color: #D2DEE1;
   }
 
-  .container .content h6 {
+  .experience-container .content h6 {
     font-style: italic;
     font-size: 14px;
   }
   
-  .container .content p {
+  .experience-container .content p {
     margin: 0;
     font-size: 16px;
     line-height: 22px;
@@ -638,30 +645,30 @@ h1 {
       left: 90px;
     }
   
-    .container {
+    .experience-container {
       width: 100%;
       padding-left: 120px;
       padding-right: 30px;
     }
   
-    .container.right {
+    .experience-container.right {
       left: 0%;
     }
   
-    .container.left::after, 
-    .container.right::after {
+    .experience-container.left::after, 
+    .experience-container.right::after {
       left: 82px;
     }
   
-    .container.left::before,
-    .container.right::before {
+    .experience-container.left::before,
+    .experience-container.right::before {
       left: 100px;
       border-color: transparent $black transparent transparent;
     }
 
   
-    .container.left .content,
-    .container.right .content {
+    .experience-container.left .content,
+    .experience-container.right .content {
       padding: 30px 30px 30px 90px;
       border-radius: 3px;
     }

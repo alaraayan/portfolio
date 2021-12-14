@@ -6,7 +6,7 @@ export default function WorkExperience() {
         <div className="column-flex-container">
           <h1 className="title-font section-title">Previous Experience</h1>
           <div className="timeline">
-            <div className="container left">
+            <div className="experience-container left">
               {/* <div className="date">date-field</div> */}
               <div className="content">
                 <h2>Marketing Coordinator</h2>
@@ -16,7 +16,7 @@ export default function WorkExperience() {
                 </p>
               </div>
             </div>
-            <div className="container right">
+            <div className="experience-container right">
               <div className="content">
                 <h2>Marketing Assistant</h2>
                 <h6>Michael Page, Jul 2015 - Dec 2017</h6>
@@ -25,13 +25,13 @@ export default function WorkExperience() {
                 </p>
               </div>
             </div>
-            <div className="container left">
+            <div className="experience-container left">
               <div className="content cursor">
-                <a href="https://www.linkedin.com/in/alaraayan/" target="_blank" rel="noreferrer" ><h2>Additional career information is available on LinkedIn </h2></a>
+                <a href="https://www.linkedin.com/in/alaraayan/" target="_blank" rel="noreferrer" ><p>Please click here for the additional career information available on LinkedIn</p></a>
                 
               </div>
             </div>
-            {/* <div className="container right">
+            {/* <div className="experience-container right">
               <div className="content">
                 <h2>Marketing Intern</h2>
                 <p>
