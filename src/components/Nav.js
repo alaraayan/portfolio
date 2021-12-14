@@ -24,10 +24,10 @@ export default function Nav() {
     })
   }
   return (
-    <div className="navbar" style={{ display: !hasScrolled ? 'none' : '' }}>
+    <div className="navbar" style={{ display: !hasScrolled ? 'none' : '' }} id="nav">
 
       <div className="navbar-flex-container">
-        <div className="title-font medium-title cursor" onClick={scrollToTop}>ALARA AYAN</div>
+        <div className="title-font medium-title cursor nav-name" onClick={scrollToTop}>ALARA AYAN</div>
         <div className="navbar-links-container ">
           <Link
             activeClass="active"

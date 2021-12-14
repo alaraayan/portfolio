@@ -3,7 +3,7 @@ export default function WorkExperience() {
   return (
     <>
       <div className="component-container light" id="experience"> 
-        <div className="column-flex-container">
+        <div className="column-flex-container experience-section">
           <h1 className="title-font section-title">Previous Experience</h1>
           <div className="timeline">
             <div className="experience-container left">

@@ -87,7 +87,7 @@ export default function Projects() {
                       ))}
                     </div>
                     <h3 className="project-desc">{project.description}</h3>
-                    <div>
+                    <div className="project-button-container">
                       <Button className="CheckButton">
                         <a href={project.links.demo} target="_blank" rel="noreferrer" className="cursor demo-link">see the website</a>
                       </Button>
