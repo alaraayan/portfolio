@@ -7,7 +7,6 @@ import zenith from '../assets/images/zenith.png'
 import moodflix from '../assets/images/moodflix.png'
 import trivial from '../assets/images/trivial.png'
 import pacMan from '../assets/images/pacman.png'
-import gitHub from '../assets/images/github.png'
 
 export default function Projects() {
   
@@ -66,8 +65,9 @@ export default function Projects() {
             navButtonsAlwaysVisible={true}
             navButtonsProps={{     
               style: {
-                backgroundColor: '#F8F8F8',
-                color: '#1D2226',
+                backgroundColor: '#1D2226',
+                color: '#F8F8F8',
+                margin: '5px',
               } } 
             }
             indicators={false}
@@ -79,20 +79,20 @@ export default function Projects() {
                 return (
                   <ProjectCard key={index} className="project-card">
                     
-                    <h2 className="project-name">{project.name}</h2>
+                    <h2 className="project-name medium-title">{project.name}</h2>
                     <img src={project.image} className="project-img"></img>
-                    <div className="row-flex-container">
+                    <div className="row-flex-container tech-icon-container">
                       { project.technologies.map((tech,index) => (
-                        <div className="icon-item" key={index}><i className={tech}></i></div>
+                        <div className="icon-item icon" key={index}><i className={tech}></i></div>
                       ))}
                     </div>
                     <h3 className="project-desc">{project.description}</h3>
                     <div>
                       <Button className="CheckButton">
-                        <a href={project.links.demo} target="_blank" rel="noreferrer" className="cursor">live website</a>
+                        <a href={project.links.demo} target="_blank" rel="noreferrer" className="cursor demo-link">see the website</a>
                       </Button>
                       <Button className="CheckButton">
-                        <a href={project.links.gitHub} target="_blank" rel="noreferrer" className="cursor"><img src={gitHub} alt="github icon" className="icon"></img>GitHub</a>
+                        <a href={project.links.gitHub} target="_blank" rel="noreferrer" className="cursor repo-link"><i className="devicon-github-original"></i> see the code</a>
                       </Button>
                     </div>
                   </ProjectCard> )
