@@ -599,51 +599,6 @@ h1 {
     left: 8px;
   }
   
-  .container .date {
-    position: absolute;
-    display: inline-block;
-    top: calc(50% - 8px);
-    text-align: center;
-    font-size: 14px;
-    font-weight: bold;
-    color: $black;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    z-index: 1;
-  }
-  
-  .container.left .date {
-    right: -75px;
-  }
-  
-  .container.right .date {
-    left: -75px;
-  }
-  
-  .container .icon {
-    position: absolute;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    padding: 9px 0;
-    top: calc(50% - 20px);
-    background: #D2DEE1;
-    border: 2px solid $black;
-    border-radius: 40px;
-    text-align: center;
-    font-size: 18px;
-    color: $black;
-    z-index: 1;
-  }
-  
-  .container.left .icon {
-    right: 56px;
-  }
-  
-  .container.right .icon {
-    left: 56px;
-  }
-  
   .container .content {
     padding: 30px 90px 30px 30px;
     background: $black;
@@ -655,12 +610,19 @@ h1 {
     padding: 30px 30px 30px 90px;
 
   }
-  
-  .container .content h2 {
+  a {
+    text-decoration: none;
+  }
+  .container .content h2, .container .content h6 {
     margin: 0 0 10px 0;
     font-size: 18px;
     font-weight: normal;
     color: #D2DEE1;
+  }
+
+  .container .content h6 {
+    font-style: italic;
+    font-size: 14px;
   }
   
   .container .content p {
@@ -669,6 +631,7 @@ h1 {
     line-height: 22px;
     color: $beige;
   }
+
   
   @media (max-width: 767.98px) {
     .timeline::after {
@@ -695,23 +658,12 @@ h1 {
       left: 100px;
       border-color: transparent $black transparent transparent;
     }
-  
-    .container.left .date,
-    .container.right .date {
-      right: auto;
-      left: 15px;
-    }
-  
-    .container.left .icon,
-    .container.right .icon {
-      right: auto;
-      left: 146px;
-    }
+
   
     .container.left .content,
     .container.right .content {
       padding: 30px 30px 30px 90px;
-      border-radius: 500px 0 0 500px;
+      border-radius: 3px;
     }
   }
 }

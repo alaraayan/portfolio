@@ -1,3 +1,4 @@
+
 export default function WorkExperience() {
   return (
     <>
@@ -6,45 +7,38 @@ export default function WorkExperience() {
           <h1 className="title-font section-title">Previous Experience</h1>
           <div className="timeline">
             <div className="container left">
-              <div className="date">15 Dec</div>
-              <i className="icon fa fa-home"></i>
+              {/* <div className="date">date-field</div> */}
               <div className="content">
-                <h2>Lorem ipsum dolor sit amet</h2>
+                <h2>Marketing Coordinator</h2>
+                <h6>Michael Page, Jan 2018 - Dec 2019</h6>
                 <p>
-        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+        I was in charge of all marketing and communication activities for both Michael Page and Page Executive brands, from strategy and budget planning to execution and reporting. Reported directly to the Sr. Regional Marketing Manager in Spain and worked as part of the regional team accross five countries.  
                 </p>
               </div>
             </div>
             <div className="container right">
-              <div className="date">22 Oct</div>
-              <i className="icon fa fa-gift"></i>
               <div className="content">
-                <h2>Lorem ipsum dolor sit amet</h2>
+                <h2>Marketing Assistant</h2>
+                <h6>Michael Page, Jul 2015 - Dec 2017</h6>
                 <p>
-        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+        During my time in this role I was lucky enough to be given ownership of two major projects: The launch of the new company training platform and the new intranet. I also assisted with the new website launch and coordinated with the team based in Barcelona.
                 </p>
               </div>
             </div>
             <div className="container left">
-              <div className="date">10 Jul</div>
-              <i className="icon fa fa-user"></i>
-              <div className="content">
-                <h2>Lorem ipsum dolor sit amet</h2>
-                <p>
-        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                </p>
+              <div className="content cursor">
+                <a href="https://www.linkedin.com/in/alaraayan/" target="_blank" rel="noreferrer" ><h2>Additional career information is available on LinkedIn </h2></a>
+                
               </div>
             </div>
-            <div className="container right">
-              <div className="date">18 May</div>
-              <i className="icon fa fa-running"></i>
+            {/* <div className="container right">
               <div className="content">
-                <h2>Lorem ipsum dolor sit amet</h2>
+                <h2>Marketing Intern</h2>
                 <p>
-        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                  Pegasus
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       
