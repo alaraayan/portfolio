@@ -10,7 +10,9 @@ $general-text-font: 'DM Sans', sans-serif;
   font-weight: 470;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   font-family: $general-text-font;
   margin: 0;
@@ -447,87 +449,272 @@ h1 {
   h1 {
     margin-top: 3%;
   }
-}
-.makeStyles-root-1 {
-  width: 85%;
-  height: 75%;
-  
-  .MuiPaper-root {
-    margin-top: 3%;
-    height: 100%;
-    padding: 5%;
-    background-color: rgba(248, 248, 248, 1);
-    // background-color: $black;
+  .makeStyles-root-1 {
+    width: 85%;
+    height: 75%;
     
-  }
-  .project-card {
-    width: 100%;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-
-    h2 {
-      font-family: $title-font;
-      margin-bottom: 2%;
-      color: $black;
-      text-decoration: underline;
-    }
-    
-    .project-img {
-      width: 85%;
-      height: 75%;
-      // border: $beige 1px solid;
-      border-radius: 3px;
-      box-shadow: rgba(0, 0, 0, 0.596) 0px 3px 6px 1px;
-    }
-    .tech-icon-container {
-      justify-content: center;
-      align-items: center;
-      gap: 2%;
-      margin: 3%;
-    }
-    .icon-item {
-      margin: 0;
-      i {
-        font-size: 225%;
-        color: rgb(73, 73, 73);
-      }
-    }
-    h3 {
-      font-family: $title-font;
-      text-align: center;
-    }
-    a {
-      text-decoration: none;
-      font-size: 100%;
-      flex-grow: 1;
-      margin-top: 9%;
-      padding: 8px 25px;
-      color: $black;
-      background-color: $beige;
-      border: 2px solid $black;
-      border-radius: 2px;
-      width: 25%;
-      flex-basis: calc(50% - 40px);
-      text-align: center;
-      i {
-        font-size: 130%;
-      }
-      &:hover {
-        background-color: $black;
-        color: $beige;
-        border: 2px solid $black;
-        border-radius: 2px;
-        // background-color: #002fa7;
-  }
+    .MuiPaper-root {
+      margin-top: 3%;
+      height: 100%;
+      padding: 5%;
+      background-color: rgba(248, 248, 248, 1);
+      // background-color: $black;
       
     }
-  }
+    .project-card {
+      width: 100%;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
   
+      h2 {
+        font-family: $title-font;
+        margin-bottom: 2%;
+        color: $black;
+        text-decoration: underline;
+      }
+      
+      .project-img {
+        width: 85%;
+        height: 75%;
+        // border: $beige 1px solid;
+        border-radius: 3px;
+        box-shadow: rgba(0, 0, 0, 0.596) 0px 3px 6px 1px;
+      }
+      .tech-icon-container {
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+        margin: 3%;
+      }
+      .icon-item {
+        margin: 0;
+        i {
+          font-size: 225%;
+          color: rgb(73, 73, 73);
+        }
+      }
+      h3 {
+        font-family: $title-font;
+        text-align: center;
+      }
+      a {
+        text-decoration: none;
+        font-size: 100%;
+        flex-grow: 1;
+        margin-top: 9%;
+        padding: 8px 25px;
+        color: $black;
+        background-color: $beige;
+        border: 2px solid $black;
+        border-radius: 2px;
+        width: 25%;
+        flex-basis: calc(50% - 40px);
+        text-align: center;
+        i {
+          font-size: 130%;
+        }
+        &:hover {
+          background-color: $black;
+          color: $beige;
+          border: 2px solid $black;
+          border-radius: 2px;
+          // background-color: #002fa7;
+    }
+        
+      }
+    }
+    
+  }
 }
 
+//* PROJECTS
+
+#experience {
+  .timeline {
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px 0;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: $black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+  }
+  
+  .container {
+    padding: 15px 30px;
+    position: relative;
+    background: inherit;
+    width: 50%;
+  }
+  
+  .container.left {
+    left: 0;
+  }
+  
+  .container.right {
+    left: 50%;
+  }
+  
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: calc(50% - 8px);
+    right: -8px;
+    background: $beige;
+    border: 2px solid $black;
+    border-radius: 16px;
+    z-index: 1;
+  }
+  
+  .container.right::after {
+    left: -8px;
+  }
+  
+  .container::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: calc(50% - 1px);
+    right: 8px;
+    background: $black;
+    z-index: 1;
+  }
+  
+  .container.right::before {
+    left: 8px;
+  }
+  
+  .container .date {
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 8px);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: $black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+  }
+  
+  .container.left .date {
+    right: -75px;
+  }
+  
+  .container.right .date {
+    left: -75px;
+  }
+  
+  .container .icon {
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 9px 0;
+    top: calc(50% - 20px);
+    background: #D2DEE1;
+    border: 2px solid $black;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: $black;
+    z-index: 1;
+  }
+  
+  .container.left .icon {
+    right: 56px;
+  }
+  
+  .container.right .icon {
+    left: 56px;
+  }
+  
+  .container .content {
+    padding: 30px 90px 30px 30px;
+    background: $black;
+    position: relative;
+    border-radius: 3px;
+  }
+  
+  .container.right .content {
+    padding: 30px 30px 30px 90px;
+
+  }
+  
+  .container .content h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: #D2DEE1;
+  }
+  
+  .container .content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: $beige;
+  }
+  
+  @media (max-width: 767.98px) {
+    .timeline::after {
+      left: 90px;
+    }
+  
+    .container {
+      width: 100%;
+      padding-left: 120px;
+      padding-right: 30px;
+    }
+  
+    .container.right {
+      left: 0%;
+    }
+  
+    .container.left::after, 
+    .container.right::after {
+      left: 82px;
+    }
+  
+    .container.left::before,
+    .container.right::before {
+      left: 100px;
+      border-color: transparent $black transparent transparent;
+    }
+  
+    .container.left .date,
+    .container.right .date {
+      right: auto;
+      left: 15px;
+    }
+  
+    .container.left .icon,
+    .container.right .icon {
+      right: auto;
+      left: 146px;
+    }
+  
+    .container.left .content,
+    .container.right .content {
+      padding: 30px 30px 30px 90px;
+      border-radius: 500px 0 0 500px;
+    }
+  }
+}
 
 
 
