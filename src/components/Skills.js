@@ -5,7 +5,7 @@ export default function Skills() {
     <>
       <div className="component-container light" id="skills"> 
         <div className="separate">
-          <h1 className="title-font text-aligned-right">Skills &amp; Tools</h1>
+          <h1 className="title-font">Skills &amp; Tools</h1>
           <div className="skills-container">
             <div className="skills languages">
               
