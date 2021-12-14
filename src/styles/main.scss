@@ -10,11 +10,15 @@ $general-text-font: 'DM Sans', sans-serif;
   font-weight: 470;
 }
 
-*,
+* {
+  box-sizing: border-box;
+  font-family: $general-text-font;
+  margin: 0;
+}
+
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: $general-text-font;
   margin: 0;
 }
 
@@ -673,6 +677,22 @@ h1 {
       border-radius: 3px;
     }
   }
+
+  .linkedin-redirect-text {
+    text-align: center;
+    i {
+      font-size: 300%;
+    }
+    &:hover {
+      background-color: $beige;
+      border: 2px solid $black;
+      
+      border-radius: 2px;
+      p {
+        color: $black;
+      }
+    }
+    }
 }
 
 

@@ -26,7 +26,7 @@ export default function WorkExperience() {
               </div>
             </div>
             <div className="experience-container left">
-              <div className="content cursor">
+              <div className="content cursor linkedin-redirect-text">
                 <a href="https://www.linkedin.com/in/alaraayan/" target="_blank" rel="noreferrer" ><p>Please click here for the additional career information available on LinkedIn</p></a>
                 
               </div>

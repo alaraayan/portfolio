@@ -31,7 +31,7 @@ export default function About() {
             <div className="info-text">
               <p>I recently graduated from the Software Engineering Immersive at General Assembly and continue to work there as a TA. Previously, I have built a career of 4 years in marketing, working in an international team.</p> 
               <br/>
-              <p>In late 2019, I took a 6-month break to forge myself a new career. A pandemic and countless sourdough breads later, always being interested in web design, I started to teach myself Photoshop and HTML and CSS. It quickly became clear VSCode was where I belonged rather than Adobe CS. I then enrolled in the General Assembly SEI bootcamp. 13 wonderful weeks later, I am now looking to build on my skills within an engaging work environment where I can root and grow as a developer.</p>
+              <p>In late 2019, I took a 6-month break to forge myself a new career. A pandemic and countless sourdough breads later, always being interested in web design, I started to teach myself HTML and CSS. It quickly became clear VSCode was where I belonged. I then enrolled in the General Assembly SEI bootcamp. 13 wonderful weeks later, I am now looking to build on my skills within an engaging work environment where I can root and grow as a developer.</p>
             </div>
           </div>
           <div className="row-flex-container">
