@@ -300,6 +300,9 @@ h1 {
 .blob {
   width: 70%;
   cursor: pointer;
+  &:hover {
+    width: 73%;
+  }
 }
 
 .blob-inner {
