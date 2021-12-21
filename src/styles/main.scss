@@ -233,6 +233,9 @@ h1 {
   p {
     display: inline;
   }
+  @media only screen and (max-width: 1095px){
+    width:unset;
+  }
 }
 
 //****NAVBAR****//
@@ -421,14 +424,9 @@ h1 {
   
 }
 
-.test {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  h1 {
-    font-size: 15px;
-  }
-  
+.email-icon {
+  display:unset;
+  font-size: 36px;
 }
 .white {
   color: white;
