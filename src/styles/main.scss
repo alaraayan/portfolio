@@ -746,6 +746,7 @@ h1 {
   }
 
   #skills {
+    
 
     @media only screen and (max-width: 1149px){
       flex-direction: column;
@@ -768,6 +769,16 @@ h1 {
       }
       
       
+    }
+    @media only screen and (max-width: 500px){
+      .skills-container .skills {
+        width: 70%;
+      }
+    }
+    @media only screen and (max-width: 350px){
+      .skills-container .skills {
+        width: 80%;
+      }
     }
   }
   #projects {
