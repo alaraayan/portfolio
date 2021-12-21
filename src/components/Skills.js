@@ -14,7 +14,7 @@ export default function Skills() {
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>Sass</li>
-                <li>Javascript</li>
+                <li>JavaScript</li>
                 <li>React.js</li>
                 <li>Node.js + Express.js</li>
                 <li>MongoDB + Mongoose</li>
