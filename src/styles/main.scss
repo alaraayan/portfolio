@@ -438,9 +438,9 @@ h1 {
 //* PROJECTS
 
 #projects {
-  height: 200vh;
+  height: 110vh;
   h1 {
-    margin-top: 3%;
+    margin-top: 2%;
   }
   .makeStyles-root-1, .jss1 {
     width: 85%;
@@ -772,6 +772,13 @@ h1 {
   }
   #projects {
 
+    @media only screen and (min-width: 1200px){
+      height: 100vh;
+    }
+    @media only screen and (min-width: 1200px) and (max-height: 892px)  {
+      height: 150vh;
+    }
+
     @media only screen and (max-width: 1149px){
       flex-direction: column;
       justify-content: center;
@@ -792,6 +799,14 @@ h1 {
       }
       .project-carousel {
         height: 80vh;
+      }
+      .project-button-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .tech-icon-container {
+        display:none;
       }
     }
   }
