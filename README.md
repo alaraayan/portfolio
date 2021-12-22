@@ -1,6 +1,6 @@
 # <img src="src/assets/images/alara.png" alt="graphic image" style="height:40px; width:40px"/> Personal Portfolio | Single Page React app 
 
-Please visit [alaraayan.com](alaraayan.com) for my portfolio
+Please visit [alaraayan.com](https://www.alaraayan.com) for my portfolio
 
 ## Technologies Used
 
