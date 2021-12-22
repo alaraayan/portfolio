@@ -59,7 +59,7 @@ export default function Hero() {
           <div className="icons row-flex-container">
             <a href="https://github.com/alaraayan" target="_blank" rel="noreferrer" className="hero-contact-links cursor"><img src={gitHub} alt="github icon" className="icon"></img></a>
 
-            <a href="https://www.linkedin.com/in/alaraayan/" target="_blank" rel="noreferrer" className="hero-contact-links" ><img src={linkedIn} alt="linkedin icon" className="icon cursor"></img></a>
+            <a href="https://www.linkedin.com/in/alaraayan/" target="_blank" rel="noreferrer" className="hero-contact-links cursor" ><img src={linkedIn} alt="linkedin icon" className="icon cursor"></img></a>
             <div className="location-link-container "><img src={locationPin} alt="location pin icon" className="icon"></img>LONDON, N8</div>
           </div>
         </div>
