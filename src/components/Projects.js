@@ -7,10 +7,21 @@ import zenith from '../assets/images/zenith.png'
 import moodflix from '../assets/images/moodflix.png'
 import trivial from '../assets/images/trivial.png'
 import pacMan from '../assets/images/pacman.png'
+import todo from '../assets/images/todo.png'
 
 export default function Projects() {
   
   const projects = [
+    {
+      name: 'Side Project: To-Do App',
+      image: todo,
+      technologies: ['devicon-python-plain', 'devicon-django-plain', 'devicon-postgresql-plain', 'devicon-javascript-plain','devicon-react-original-wordmark',  'devicon-sass-original','devicon-html5-plain-wordmark', 'devicon-css3-plain-wordmark', 'devicon-git-plain','devicon-heroku-original'],
+      description: 'Star Wars themed to-do list app allowing the user to create edit and delete items from a to-do list.',
+      links: {
+        demo: 'https://todo-app-sw.netlify.app',
+        gitHub: 'https://github.com/alaraayan/todo-frontend',
+      },
+    },
     {
       name: 'Project-4: Zenith',
       image: zenith,
