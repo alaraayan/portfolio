@@ -16,7 +16,7 @@ export default function Projects() {
       name: 'Side Project: To-Do App',
       image: todo,
       technologies: ['devicon-python-plain', 'devicon-django-plain', 'devicon-postgresql-plain', 'devicon-javascript-plain','devicon-react-original-wordmark',  'devicon-sass-original','devicon-html5-plain-wordmark', 'devicon-css3-plain-wordmark', 'devicon-git-plain','devicon-heroku-original'],
-      description: 'Star Wars themed to-do list app allowing the user to create edit and delete items from a to-do list.',
+      description: 'Star Wars themed to-do list app allowing the user to create, edit and delete items from their current to-do list or save them for later.',
       links: {
         demo: 'https://todo-app-sw.netlify.app',
         gitHub: 'https://github.com/alaraayan/todo-frontend',
