@@ -58,8 +58,8 @@ export default function Projects() {
       technologies: ['devicon-javascript-plain', 'devicon-html5-plain-wordmark', 'devicon-css3-plain-wordmark', 'devicon-git-plain'],
       description: 'The classic arcade game built using HTML, CSS and Vanilla JavaScript. 1-week solo project.',
       links: {
-        demo: 'https://github.com/alaraayan/sei-project-1',
-        gitHub: 'https://alaraayan.github.io/sei-project-1/',
+        demo: 'https://alaraayan.github.io/sei-project-1/',
+        gitHub: 'https://github.com/alaraayan/sei-project-1',
       },
     }
   ]
